@@ -1,0 +1,36 @@
+@import url(../styles/globalVariable.css);
+
+
+
+.loader {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.loader h1 {
+    /* transition: translate(-50%,-50%); */
+    color: var(--primary-color);
+    /* color: black; */
+    font-size: 3rem;
+    animation: infinite-animation 0.5s ease-in-out infinite;
+}
+
+@keyframes infinite-animation {
+    0% {
+        font-size: 3rem;
+        /* animation-timing-function: ease-in; */
+        /* animation-delay: 0s; */
+    }
+
+
+    100% {
+        font-size: 6rem;
+        /* animation-timing-function: ease-in; */
+        /* animation-delay: 5s; */
+    }
+}

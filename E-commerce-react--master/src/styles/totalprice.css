@@ -1,0 +1,27 @@
+@import url('../styles/globalVariable.css');
+
+.totalprice {
+    /* border: 2px solid black; */
+    margin: 0 10px;
+    /* height: 400px; */
+    width: 100%;
+    background-color: white;
+    box-shadow: 12px 12px 12px -10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.totalprice p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.totalprice button {
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    /* background-color: rgb(155, 224, 51); */
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+Here are the basic commands for starting the project
+
+Run both of these commands in seprate terminals
+
+for running the react - 'npm start'
+for running the json database- 'json-server --watch db.json --port 5001'

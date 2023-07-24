@@ -1,0 +1,59 @@
+.mainCreate {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.createItem {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    padding: 10px 40px;
+    box-shadow: 10px 10px 80px grey;
+}
+
+.formController {
+    width: 500px;
+    padding: 0;
+
+}
+
+.boldLabel {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* responsive css */
+@media screen and (max-width:600px) {
+    .boldLabel {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .formController {
+        width: 300px !important;
+        padding: 0 !important;
+
+    }
+}
+
+@media screen and (max-width:400px) {
+    .boldLabel {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .formController {
+        width: 200px !important;
+        padding: 0 !important;
+
+    }
+}

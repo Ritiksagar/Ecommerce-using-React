@@ -1,0 +1,157 @@
+@import url('../styles/globalVariable.css');
+
+.productdetails {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 70%;
+    height: 90vh;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px 20px;
+
+}
+
+.productleft {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.productimages {
+    height: 80%;
+    width: 100%;
+}
+
+.productimages img {
+    height: 100%;
+    width: 100%;
+}
+
+.productNamedetail {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.productright {
+    flex: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column
+}
+
+.about {
+    font-size: 1.5rem;
+}
+
+.productprice {
+    font-style: italic;
+    color: grey;
+    font-size: 2rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+}
+
+.btns button {
+    margin: 0 10px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.update {
+    border: 1px solid black !important;
+    padding: 4px 10px;
+}
+
+/* responsive css */
+
+@media screen and (max-width:930px) {
+    .productdetails {
+
+        width: 90%;
+        height: 100vh;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .productdetails {
+
+        width: 90%;
+        height: 100vh;
+
+    }
+
+    .productNamedetail {
+        font-weight: 400;
+        font-size: 1rem;
+
+
+    }
+
+    .about {
+        font-size: 1rem;
+    }
+
+    .productprice {
+
+        font-size: 1rem;
+    }
+
+    .productimages {
+        height: 50%;
+        width: 80%;
+    }
+
+    .productimages img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .productdetails {
+
+        width: 95%;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .productNamedetail {
+        font-weight: 900;
+        font-size: 2rem;
+
+
+    }
+
+    .about {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .productprice {
+
+        font-size: 1.2rem;
+    }
+
+    .productimages {
+        margin: auto;
+        height: 50%;
+        width: 80%;
+    }
+
+    /* json-server --watch db.json --port 4000 */
+
+}

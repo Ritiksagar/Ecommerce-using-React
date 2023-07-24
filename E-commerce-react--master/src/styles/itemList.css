@@ -1,0 +1,169 @@
+@import url('../styles/globalVariable.css');
+
+.listItem {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 70%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px 20px;
+
+}
+
+.listItemFalse {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 70%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px 20px;
+
+}
+
+
+.left {
+    flex: 50%;
+    display: flex;
+
+}
+
+.images {
+    height: 150px;
+    width: 250px;
+}
+
+.images img {
+    height: 100%;
+    width: 100%;
+}
+
+.productName {
+    font-weight: 700;
+}
+
+.right {
+    flex: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+}
+
+.btns button {
+    margin: 0 10px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.update {
+    border: 1px solid black !important;
+    padding: 4px 10px;
+}
+
+.right div textarea {
+    width: 100%;
+}
+
+/* media query for responsive  */
+
+@media screen and (max-width:1000px) {
+
+
+    .listItem {
+
+        width: 90%;
+
+
+    }
+
+    .listItemFalse {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+
+    .listItem {
+
+        width: 95%;
+
+
+    }
+
+    .listItemFalse {
+        width: 90%;
+    }
+
+
+
+
+
+    .images {
+        height: 100px;
+        width: 200px;
+    }
+
+    .images img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .right div p {
+        font-size: small;
+
+    }
+
+    .btns button {
+        margin: 0 5px;
+
+    }
+
+    .input_set input,
+    .last_input {
+        width: 140px;
+        display: block;
+        line-height: 10px;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+
+    .listItemFalse {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .input_set input,
+    .last_input {
+        width: 100%;
+        margin: 5px;
+
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+
+    .listItem {
+
+        width: 95%;
+        flex-direction: column;
+
+
+    }
+}

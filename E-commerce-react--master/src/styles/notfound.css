@@ -1,0 +1,13 @@
+.notFound {
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.notFound div h1 {
+    font-size: 10rem;
+    color: white;
+}
